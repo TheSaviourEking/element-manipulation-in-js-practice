@@ -104,7 +104,7 @@ const useOtherElementMethods = () => {
      */
     const useOuterHtml = () => {
         const img = document.querySelector('div#img-div img');
-        img.outerHTML = '<img src="/assets/c051b14a-39f9-4b3a-a561-668461053230.png">';
+        img.outerHTML = '<img src="./assets/c051b14a-39f9-4b3a-a561-668461053230.png">';
     }
     useOuterHtml();
 
@@ -141,25 +141,6 @@ const useOtherElementMethods = () => {
 }
 
 const makeCountDownClock = () => {
-    /**
-     * convert given time in seconds to {day, hour, minutes, seconds} format
-     */
-    // const convertSeconds = (milliSeconds) => {
-    //     milliSeconds = Number(milliSeconds);
-    //     const days = parseInt(milliSeconds / 86400000);
-    //     let remainder = milliSeconds % 86400000;
-
-    //     const hours = parseInt(remainder / 3600000);
-    //     remainder = remainder % 3600000;
-    //     const mins = parseInt(remainder / 60000);
-    //     remainder = remainder % 60000;
-    //     const secs = parseInt(remainder / 1000);
-    //     remainder = remainder % 1000;
-    //     const milliSecs = remainder;
-
-    //     return { days, hours, mins, secs, milliSecs }
-
-    // };
     const convertSeconds = (milliSeconds) => {
         const days = Math.floor(milliSeconds / 86400000);
         const hours = Math.floor(milliSeconds / 3600000 % 24); // Use % 24 to keep hours within 0-23
