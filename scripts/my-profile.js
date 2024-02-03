@@ -90,7 +90,7 @@ const addImage = () => {
     const imgDiv = document.createElement('div');
     imgDiv.setAttribute('id', 'img-div');
     const img = document.createElement('img');
-    img.setAttribute('src', 'assets/pexels-collis-3170635.jpg');
+    img.setAttribute('src', './assets/pexels-collis-3170635.jpg');
 
     imgDiv.appendChild(img); // to use background image, comment this out and check css file
 
