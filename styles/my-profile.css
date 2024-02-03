@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 70vw;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#img-div {
+    width: 50%;
+    margin: auto;
+
+    /* To use background image, uncomment out the lines below */
+    /* aspect-ratio: 1;
+    background-position: center;
+    background-image: url('../assets/c051b14a-39f9-4b3a-a561-668461053230.png'); */
+}
+.name {
+    color: #470f0f;
+    padding: 1rem;
+}
+
+.my-details {
+    text-transform: capitalize;
+    border: 1px currentColor solid;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+}
+
+.detail {
+    padding: 1rem;
+    border-bottom: 1px solid currentColor;
+    transition: background-color 0.3s border 0.5s;
+}
+
+.detail:hover {
+    background-color: #cddc39;
+    border-top: 1px solid currentColor;
+    border-bottom: none;
+}
+
+/* For the classList API to change background color */
+.light-mode {
+    background-color: aqua;
+}
+
+.dark-mode {
+    background-color: dimgrey;
+}
+
+/* Birthday countdown */
+.count-down {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #cddc39;
+    transition: all 0.5s;
+}
+
+.count-down:hover {
+    background-color: azure;
+    color: blue;
+    transform: scale(1.1);
+    border-radius: 2rem;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+}
